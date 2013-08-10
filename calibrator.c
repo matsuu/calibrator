@@ -842,7 +842,7 @@ void plotCache(cacheInfo *cache, lng **result, lng MHz, char *fn, FILE *fp, lng 
 	fprintf(fp, " set output '%s.ps'\n", fn);
 	fprintf(fp, "#set term gif transparent interlace small size 500, 707 # xFFFFFF x333333 x333333 x0055FF x005522 x660000 xFF0000 x00FF00 x0000FF\n");
 	fprintf(fp, "#set output '%s.gif'\n", fn);
-	fprintf(fp, "set data style linespoints\n");
+	fprintf(fp, "set style data linespoints\n");
 	fprintf(fp, "set key below\n");
 	fprintf(fp, "set title '%s'\n", fn);
 	fprintf(fp, "set xlabel 'memory range [bytes]'\n");
